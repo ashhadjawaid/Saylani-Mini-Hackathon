@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav class="navbar container">
+        <a href="#" class="logo">Personal Blogging App</a>
+        <input type="checkbox" id="toggler" />
+        <label for="toggler"><i class="ri-menu-line"></i></label>
+        <div class="menu">
+          <ul class="list">
+            <li><a href="/Signup/signup.html">SignUp</a></li>
+          </ul>
+        </div>
+      </nav>    
+      <div class="readers">
+        <h1>LogIn</h1>
+      </div>
+    <div class="loginContainer">
+      <div class="loginBox">
+        <input id="loginEmail" type="email" placeholder="Email" required>
+        <input id="loginPassword" type="password" placeholder="Password" required  required pattern="^(?=.[a-z])(?=.[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$">
+        <button id="loginBtn" class="loginButton">Login</button>
+      </div>
+    </div>
+    <script type="module" src="login.js"></script>
+</body>
+</html>

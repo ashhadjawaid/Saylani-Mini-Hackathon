@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+    /* padding: 50px; */
+}
+/* General styles end */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #7749f8;
+    /* padding-block: 15px; */
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+.logo {
+    margin-right: 50px;
+}
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler,
+.navbar label {
+    display: none;
+}
+.readers{
+    background-color: #fff;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.InfoboxContainer{
+    background-color: white;
+    width: 60%;
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+.InfoBox{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.username{
+    margin-left: 10px;
+}
+
+.password{
+    margin-left: 10px;
+}
+
+.InfoBox img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.InfoBox input{
+    max-width: 200px;
+    height: 40px;
+    margin: 10px;
+    border: 1px solid #b9b5b5;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.UpdatePassword{
+    width: 150px;
+    margin-left: 12px;
+    margin-top: 10px;
+    background: #7749f8;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu {
+        max-height:100%;
+}
+}

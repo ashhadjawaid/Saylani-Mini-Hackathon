@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+    /* padding: 50px; */
+}
+/* General styles end */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #7749f8;
+    /* padding-block: 15px; */
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+.logo {
+    margin-right: 50px;
+}
+
+#logoutBtn{
+    background-color: #7749f8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler, .navbar label {
+    display: none;
+}
+
+.readers{
+    background-color: #fff;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dashboardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboardBox{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    width: 1000px;
+    height: 400px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dashboardInnerBox input{
+    width: 800px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 0px;
+    text-align: center;
+    border: 1px solid #b8b7b7;
+}
+
+.dashboardInnerBox{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 900px;
+    height: 300px;
+}
+
+.signupButton{
+    background-color: #7749f8;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.dashboardInnerBox #blogBody{
+    height: 100px;
+}
+
+.singleBlog{
+    background-color: #fff;
+    min-width: 80%;
+    border: 1px solid rgb(121, 121, 121);
+    margin: 20px;
+    
+}
+
+.blogProfile{
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px;
+}
+
+.blogProfileDetail{
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+.blogProfile img{
+    border-radius: 30px;
+}
+
+.blog{
+    margin-left: 40px;
+}
+
+.buttons{
+    display: flex;
+    /* gap: 5px; */
+    margin: 10px;
+}
+
+.buttons .deletebutton{
+    margin-left: 20px;
+}
+
+.deletebutton button{
+    background-color: #7749f8;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.buttons .editbutton{
+    margin-left: 20px;
+}
+
+.editbutton button{
+    background-color: #7749f8;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.blogContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 90%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu {
+        max-height:100%;
+}
+}

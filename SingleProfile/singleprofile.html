@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="singleprofile.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav class="navbar container">
+        <a href="#" class="logo">Personal Blogging App</a>
+        <input type="checkbox" id="toggler" />
+        <label for="toggler"><i class="ri-menu-line"></i></label>
+        <div class="menu">
+          <ul class="list">
+            <li><a href="../index.html">Logout</a></li>
+            <li><a id="username" href="/Personal Profile/personalprofile.html">UserName</a></li>
+          </ul>
+        </div>
+    </nav>
+    <div class="readers">
+        <h1>Profile</h1>
+    </div>
+    <section class="InfoboxContainer">
+        <section class="InfoBox">
+            <img src="/download.jpeg" alt="">
+            <label for="profilePic">Upload Your Profile Photo</label>
+            <input id="profilePic" type="file">
+            <h2 class="username">UserName</h2>
+            <h2 class="password">Password</h2>
+            <input id="oldPassword" type="password" placeholder="Old Password"  required minlength="8"  required pattern="^(?=.[a-z])(?=.[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$">
+            <input id="newPassword" type="password" placeholder="New Password"  required minlength="8"  required pattern="^(?=.[a-z])(?=.[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$">
+            <input type="password" placeholder="Repeat Password"  required minlength="8"  required pattern="^(?=.[a-z])(?=.[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$">
+            <button id="updateBtn" class="UpdatePassword">Update</button>
+        </section>
+    </section>
+
+
+    <script type="module" src="singleprofile.js"></script>
+</body>
+</html>

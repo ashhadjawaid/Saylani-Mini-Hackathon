@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+    /* padding: 50px; */
+}
+/* General styles end */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #7749f8;
+    /* padding-block: 15px; */
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+.logo {
+    margin-right: 50px;
+}
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler,
+.navbar label {
+    display: none;
+}
+
+.readers{
+    background-color: #fff;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.readers a{
+    text-decoration: none;
+}
+
+.allfromusername{
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.singleBlog{
+    background-color: #fff;
+    width: 80%;
+    border: 1px solid rgb(121, 121, 121);
+    margin: 20px;
+    border-radius: 20px;
+    max-width: max-content;
+}
+
+.blogProfile{
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px;
+}
+
+.blogProfileDetail{
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+.blogProfile img{
+    border-radius: 30px;
+}
+
+.blog{
+    margin-left: 40px;
+}
+
+.mainsection{
+    display: flex;
+    /* background-color: aqua; */
+    width: 100%;
+}
+
+.section1{
+    width: 70%;
+    margin-left: 100px;
+}
+
+.section2{
+    width: 20%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.section2 .s2div img{
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu {
+        max-height:100%;
+}
+}
